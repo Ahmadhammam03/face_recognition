@@ -1,7 +1,7 @@
 .. highlight:: shell
 
 ============
-Contributing
+Contributin
 ============
 
 Contributions are welcome, and they are greatly appreciated! Every
