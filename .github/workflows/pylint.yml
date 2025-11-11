@@ -13,21 +13,6 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: '3.x'name: Pylint
-
-on: [push, pull_request]
-
-jobs:
-  pylint:
-    runs-on: ubuntu-latest
-    
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-      
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
         python-version: '3.x'
         
     - name: Install dependencies
@@ -38,14 +23,3 @@ jobs:
     - name: Run Pylint
       run: |
         pylint $(git ls-files '*.py')
-```
-
-7. Click **"Commit changes"**
-
----
-
-## Or Use the Quick Way:
-
-You can also navigate directly by typing in your browser:
-```
-https://github.com/Ahmadhammam03/face_recognition/blob/master/.github/workflows/pylint.yml
